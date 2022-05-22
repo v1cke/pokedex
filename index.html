@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vickes Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="script.js"></script>
+    <script src="templates.js"></script>
+    <script src="pokecolors.js"></script>
+</head>
+
+<body onload="loadPokemons()">
+    <div class="bg"></div>
+    <div class="header">
+        <div class="headerContainer">
+            <div class="logo"><img src="img/pokemon-1513925_640.jpg" alt="">
+                <h1>Pokedex</h1>
+            </div>
+            <div id="searchBar" class="search-bar">
+                <button onclick="searchPokemon()">Search Pokemon</button><input id="searchPokemon" type="text"
+                    onkeyup="searchPokemon()">
+            </div>
+        </div>
+    </div>
+
+    <div id="allPokemonContainer" class="container">
+        <button onclick="loadMorePokemons()" class="button">Load more Pokemons...</button>
+    </div>
+
+    <div id="pokemonCardContainer" class="pokemon-card-container" onclick="hidePokemonCard()">
+        <div id="pokemonCard" class="pokemon-card"></div>
+    </div>
+</body>
+
+</html>
