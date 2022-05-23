@@ -55,8 +55,11 @@ function searchPokemon() {
         } else if (Pokemon.toLowerCase().includes(searchPokemon)) {
             PokemonContainer.innerHTML += renderSearchedPokemon(i);
             setColorSearchedPokemon(i);
+
         }
     }
+    PokemonContainer.innerHTML += `
+    <button onclick="loadMorePokemons()" class="button">Load more Pokemons...</button>`;
 }
 
 

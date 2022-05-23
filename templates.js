@@ -15,7 +15,6 @@ function renderSearchedPokemon(i) {
             <h3>${allPokemonArray[i]['types'][0]['type']['name']}<h3>
             <img class="pokemon-box-img" src=${allPokemonArray[i]['sprites']['other']['dream_world']['front_default']}>
             </div>
-            <button onclick="loadMorePokemons()" class="button">Load more Pokemons...</button>
             `
 }
 
